@@ -19,6 +19,7 @@ class PickerViewController: UIViewController {
     
     @IBOutlet weak var filterPickerView: UIPickerView!
     
+    
     private var selectedContactType: ContactType?
     
     var delegate: PickerViewControllerDelegate?

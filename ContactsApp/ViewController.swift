@@ -73,7 +73,6 @@ class ViewController: UIViewController {
         contactsTableView.dataSource = self
         
         let filterButton = UIBarButtonItem(image: UIImage(systemName: "line.3.horizontal.decrease.circle.fill"), style: .done, target: self, action: #selector(filterButtonAct))
-        print(filterButton)
         navigationItem.rightBarButtonItem = filterButton
     }
     

@@ -8,16 +8,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Picker View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PickerViewController" id="Y6W-OH-hqX" customClass="PickerViewController" customModule="ContactsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLh-H9-EAm">
-                                <rect key="frame" x="0.0" y="624" width="393" height="216"/>
+                                <rect key="frame" x="0.0" y="678" width="393" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="162" id="3Bc-dh-c1g"/>
+                                    <constraint firstAttribute="height" constant="162" id="wuR-pL-KLY"/>
+                                </constraints>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DC2-Ta-LFh">
                                 <rect key="frame" x="0.0" y="648" width="393" height="50"/>
@@ -60,13 +64,19 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="DC2-Ta-LFh" secondAttribute="trailing" id="2JL-z9-H3O"/>
                             <constraint firstItem="DC2-Ta-LFh" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="5Dk-Hl-HP5"/>
+                            <constraint firstAttribute="bottom" secondItem="sLh-H9-EAm" secondAttribute="bottom" constant="12" id="CBd-Xk-aBn"/>
                             <constraint firstItem="DC2-Ta-LFh" firstAttribute="trailing" secondItem="sLh-H9-EAm" secondAttribute="trailing" id="H5g-sh-eni"/>
                             <constraint firstItem="DC2-Ta-LFh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="589" id="RCu-gU-1Hu"/>
+                            <constraint firstItem="sLh-H9-EAm" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="arl-Qo-CCA"/>
                             <constraint firstAttribute="bottomMargin" secondItem="sLh-H9-EAm" secondAttribute="bottom" constant="-22" id="iYv-Qx-K8U"/>
+                            <constraint firstItem="sLh-H9-EAm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lT2-0W-eiY"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="DC2-Ta-LFh" secondAttribute="bottom" constant="120" id="t7j-i9-Ahs"/>
                             <constraint firstItem="DC2-Ta-LFh" firstAttribute="leading" secondItem="sLh-H9-EAm" secondAttribute="leading" id="yWn-Wu-bQD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="filterPickerView" destination="sLh-H9-EAm" id="ZSY-vc-sEp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
