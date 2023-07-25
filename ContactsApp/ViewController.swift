@@ -11,7 +11,7 @@ enum Gender: CaseIterable {
     case man
     case woman
     
-    var gender:String{
+    var type:String{
         switch self {
         case .woman:
             return "woman"
@@ -46,18 +46,16 @@ struct Person {
     var contactType:ContactType
 }
 
-
-
 struct Persons {
     static let persons: [Person] = [
-        Person(name: "Pilav",gender: .man, contactType: .family),
-        Person(name: "Limonata",  gender: .man, contactType: .family),
+        Person(name: "Pilav",gender: .man, contactType: .friend),
+        Person(name: "Limonata",  gender: .woman, contactType: .family),
         Person(name: "Musakka",  gender: .man, contactType: .family),
-        Person(name: "Tavuk Sote",  gender: .man, contactType: .family),
+        Person(name: "Tavuk Sote",  gender: .woman, contactType: .family),
         Person(name: "Pizza", gender: .man, contactType: .family),
-        Person(name: "Hamburger",gender: .man, contactType: .family),
+        Person(name: "Hamburger",gender: .woman, contactType: .family),
         Person(name: "Baklava", gender: .man, contactType: .family),
-        Person(name: "Künefe", gender: .man, contactType: .family),
+        Person(name: "Künefe", gender: .woman, contactType: .family),
         Person(name: "Latte", gender: .man, contactType: .family),
     ]
 }
@@ -119,9 +117,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContactTableViewCell") as! ContactTableViewCell
         
-        cell.cellImageView.image = UIImage(named: filterPersons(indexPath.section)[indexPath.row].contactType.type.lowercased())
+        cell.cellImageView.image = UIImage(named: filterPersons(indexPath.section)[indexPath.row].gender.type.lowercased())
         cell.cellTitleLabel.text = filterPersons(indexPath.section)[indexPath.row].name
-        
         return cell
     }
     

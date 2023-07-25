@@ -37,27 +37,30 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="67" id="SQc-fi-zAZ" userLabel="ContactsTableViewCell" customClass="ContactTableViewCell" customModule="ContactsApp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactTableViewCell" rowHeight="67" id="SQc-fi-zAZ" userLabel="ContactsTableViewCell" customClass="ContactTableViewCell" customModule="ContactsApp">
                                         <rect key="frame" x="0.0" y="50" width="393" height="67"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SQc-fi-zAZ" id="Z35-Xn-GAr">
                                             <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kuw-X1-sOM">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Kuw-X1-sOM">
                                                     <rect key="frame" x="20" y="0.0" width="78" height="64"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCi-Br-kTH">
-                                                    <rect key="frame" x="117" y="22" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCi-Br-kTH">
+                                                    <rect key="frame" x="110" y="19" width="245" height="29"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="CCi-Br-kTH" firstAttribute="top" secondItem="Z35-Xn-GAr" secondAttribute="topMargin" constant="8" id="5jm-cc-Hre"/>
+                                                <constraint firstItem="CCi-Br-kTH" firstAttribute="leading" secondItem="Kuw-X1-sOM" secondAttribute="trailing" constant="12" id="C5e-RD-k7v"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="CCi-Br-kTH" secondAttribute="bottom" constant="8" id="DHn-Fw-RU6"/>
                                                 <constraint firstAttribute="trailing" secondItem="Kuw-X1-sOM" secondAttribute="trailing" constant="264.66666666666669" id="K7H-WY-hth"/>
                                                 <constraint firstAttribute="bottom" secondItem="Kuw-X1-sOM" secondAttribute="bottom" constant="3" id="WPg-We-YIU"/>
+                                                <constraint firstAttribute="trailing" secondItem="CCi-Br-kTH" secondAttribute="trailing" constant="210.66666666666669" id="dC9-MT-lPF"/>
                                                 <constraint firstItem="Kuw-X1-sOM" firstAttribute="top" secondItem="Z35-Xn-GAr" secondAttribute="top" id="iRZ-ih-Rar"/>
                                                 <constraint firstItem="Kuw-X1-sOM" firstAttribute="leading" secondItem="Z35-Xn-GAr" secondAttribute="leading" constant="20" symbolic="YES" id="vh6-tx-ax5"/>
                                             </constraints>
@@ -91,6 +94,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="1910" height="1416"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
