@@ -22,15 +22,12 @@ enum Gender: CaseIterable {
 }
 
 enum ContactType: CaseIterable {
-    case allContacts
     case family
     case friend
     case work
     
     var type:String{
         switch self {
-        case .allContacts:
-            return "All Contacts"
         case .family:
             return "Family"
         case .friend:
@@ -76,6 +73,7 @@ class ViewController: UIViewController {
         contactsTableView.dataSource = self
         
         let filterButton = UIBarButtonItem(image: UIImage(systemName: "line.3.horizontal.decrease.circle.fill"), style: .done, target: self, action: #selector(filterButtonAct))
+        print(filterButton)
         navigationItem.rightBarButtonItem = filterButton
     }
     
