@@ -16,62 +16,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLh-H9-EAm">
-                                <rect key="frame" x="0.0" y="678" width="393" height="162"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="162" id="3Bc-dh-c1g"/>
-                                    <constraint firstAttribute="height" constant="162" id="wuR-pL-KLY"/>
-                                </constraints>
-                            </pickerView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DC2-Ta-LFh">
-                                <rect key="frame" x="0.0" y="648" width="393" height="50"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Za0-96-PIj">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DC2-Ta-LFh">
+                                <rect key="frame" x="0.0" y="600" width="393" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwF-pb-Bkg">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwF-pb-Bkg">
                                         <rect key="frame" x="175.66666666666666" y="15" width="42" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgS-QQ-Z6k" userLabel="Confirm">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgS-QQ-Z6k" userLabel="Confirm">
                                         <rect key="frame" x="295.66666666666669" y="8" width="85.333333333333314" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Confirm"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezM-05-gg2" userLabel="Cancel">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezM-05-gg2" userLabel="Cancel">
                                         <rect key="frame" x="12" y="8" width="78.666666666666671" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="WgS-QQ-Z6k" firstAttribute="top" secondItem="DC2-Ta-LFh" secondAttribute="top" constant="8" id="6qO-89-lZn"/>
-                                    <constraint firstAttribute="bottom" secondItem="WgS-QQ-Z6k" secondAttribute="bottom" constant="8" id="AVg-WL-o4U"/>
-                                    <constraint firstItem="ezM-05-gg2" firstAttribute="top" secondItem="DC2-Ta-LFh" secondAttribute="top" constant="8" id="Dbb-1N-JXg"/>
-                                    <constraint firstItem="ezM-05-gg2" firstAttribute="leading" secondItem="DC2-Ta-LFh" secondAttribute="leading" constant="12" id="F9n-ln-d7L"/>
-                                    <constraint firstItem="xwF-pb-Bkg" firstAttribute="leading" secondItem="ezM-05-gg2" secondAttribute="trailing" constant="85" id="NlI-l3-Gd8"/>
-                                    <constraint firstItem="WgS-QQ-Z6k" firstAttribute="leading" secondItem="xwF-pb-Bkg" secondAttribute="trailing" constant="78.329999999999998" id="PF6-Uf-WGq"/>
-                                    <constraint firstAttribute="trailing" secondItem="WgS-QQ-Z6k" secondAttribute="trailing" constant="12" id="aCj-i8-d1V"/>
-                                    <constraint firstAttribute="bottom" secondItem="ezM-05-gg2" secondAttribute="bottom" constant="8" id="fRP-Mn-KG4"/>
-                                    <constraint firstItem="xwF-pb-Bkg" firstAttribute="centerY" secondItem="WgS-QQ-Z6k" secondAttribute="centerY" id="tRM-AO-Csv"/>
-                                    <constraint firstItem="xwF-pb-Bkg" firstAttribute="top" secondItem="DC2-Ta-LFh" secondAttribute="top" constant="15" id="tTJ-8b-HJ4"/>
-                                    <constraint firstItem="xwF-pb-Bkg" firstAttribute="centerX" secondItem="DC2-Ta-LFh" secondAttribute="centerX" id="yNZ-pA-GV2"/>
-                                </constraints>
                             </view>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sLh-H9-EAm">
+                                <rect key="frame" x="0.0" y="650" width="393" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="DC2-Ta-LFh" secondAttribute="trailing" id="2JL-z9-H3O"/>
-                            <constraint firstItem="DC2-Ta-LFh" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="5Dk-Hl-HP5"/>
-                            <constraint firstAttribute="bottom" secondItem="sLh-H9-EAm" secondAttribute="bottom" constant="12" id="CBd-Xk-aBn"/>
-                            <constraint firstItem="DC2-Ta-LFh" firstAttribute="trailing" secondItem="sLh-H9-EAm" secondAttribute="trailing" id="H5g-sh-eni"/>
-                            <constraint firstItem="DC2-Ta-LFh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="589" id="RCu-gU-1Hu"/>
-                            <constraint firstItem="sLh-H9-EAm" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="arl-Qo-CCA"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="sLh-H9-EAm" secondAttribute="bottom" constant="-22" id="iYv-Qx-K8U"/>
-                            <constraint firstItem="sLh-H9-EAm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lT2-0W-eiY"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="DC2-Ta-LFh" secondAttribute="bottom" constant="120" id="t7j-i9-Ahs"/>
-                            <constraint firstItem="DC2-Ta-LFh" firstAttribute="leading" secondItem="sLh-H9-EAm" secondAttribute="leading" id="yWn-Wu-bQD"/>
+                            <constraint firstItem="sLh-H9-EAm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="EfZ-DB-UKC"/>
+                            <constraint firstItem="sLh-H9-EAm" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="drS-xb-dav"/>
+                            <constraint firstAttribute="bottom" secondItem="sLh-H9-EAm" secondAttribute="bottom" id="xMB-aI-Zcj"/>
                         </constraints>
                     </view>
                     <connections>
