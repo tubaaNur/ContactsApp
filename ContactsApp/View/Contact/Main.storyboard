@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4ei-F7-fuN" userLabel="Contacts Table View">
-                                <rect key="frame" x="0.0" y="150" width="393" height="707"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="754"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactTableViewCell" rowHeight="67" id="SQc-fi-zAZ" userLabel="ContactsTableViewCell" customClass="ContactTableViewCell" customModule="ContactsApp">
@@ -64,7 +64,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZVn-bi-f0x" firstAttribute="trailing" secondItem="4ei-F7-fuN" secondAttribute="trailing" id="RHb-QL-dLl"/>
-                            <constraint firstItem="4ei-F7-fuN" firstAttribute="top" secondItem="ZVn-bi-f0x" secondAttribute="top" constant="47" id="Zm7-WX-Lhr"/>
+                            <constraint firstItem="4ei-F7-fuN" firstAttribute="top" secondItem="ZVn-bi-f0x" secondAttribute="top" id="Zm7-WX-Lhr"/>
                             <constraint firstItem="4ei-F7-fuN" firstAttribute="leading" secondItem="ZVn-bi-f0x" secondAttribute="leading" id="bad-LI-8Lm"/>
                             <constraint firstItem="4ei-F7-fuN" firstAttribute="bottom" secondItem="ZVn-bi-f0x" secondAttribute="bottom" constant="39" id="tML-fG-qwE"/>
                         </constraints>

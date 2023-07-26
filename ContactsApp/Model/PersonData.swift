@@ -7,15 +7,25 @@
 
 struct Persons {
     static let persons: [Person] = [
-        Person(name: "Pilav",gender: .man, contactType: .friend),
-        Person(name: "Limonata",  gender: .woman, contactType: .family),
-        Person(name: "Musakka",  gender: .man, contactType: .family),
-        Person(name: "Tavuk Sote",  gender: .woman, contactType: .family),
-        Person(name: "Pizza", gender: .man, contactType: .family),
-        Person(name: "Hamburger",gender: .woman, contactType: .family),
-        Person(name: "Baklava", gender: .man, contactType: .family),
-        Person(name: "Künefe", gender: .woman, contactType: .family),
-        Person(name: "Latte", gender: .man, contactType: .family),
+        Person(name: "Tuba",gender: .woman, contactType: .family),
+        Person(name: "Başar",  gender: .man, contactType: .family),
+        Person(name: "Kübra",  gender: .woman, contactType: .family),
+        Person(name: "Sema",  gender: .woman, contactType: .friend),
+        Person(name: "Özge", gender: .man, contactType: .family),
+        Person(name: "Duygu",gender: .woman, contactType: .family),
+        Person(name: "Mehmet", gender: .man, contactType: .friend),
+        Person(name: "Ayşe", gender: .woman, contactType: .family),
+        Person(name: "Kerem", gender: .man, contactType: .friend),
+        Person(name: "David",gender: .woman, contactType: .family),
+        Person(name: "Alice", gender: .man, contactType: .work),
+        Person(name: "Nur", gender: .woman, contactType: .family),
+        Person(name: "Yıldız", gender: .man, contactType: .work),
+        Person(name: "John",gender: .woman, contactType: .friend),
+        Person(name: "Doe", gender: .man, contactType: .friend),
+        Person(name: "Harun", gender: .woman, contactType: .work),
+        Person(name: "Adnan", gender: .man, contactType: .work),
+        Person(name: "Sena", gender: .woman, contactType: .work),
+        Person(name: "Burak", gender: .man, contactType: .work),
     ]
 }
 
