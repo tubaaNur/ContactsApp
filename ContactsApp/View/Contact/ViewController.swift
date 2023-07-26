@@ -71,8 +71,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let vc = DetailViewController.instantiateFromStoryboard(String(describing: DetailViewController.self))
+        let person = filterPersons(indexPath.section)[indexPath.row]
+        vc.imageName = person.gender.type
+        vc.labelName = person.name
+        vc.cT = person.contactType
+        self.navigationController?.show(vc, sender: nil)
     }
-    
+        
     private func setSections() -> [ContactType] {
         
         if let selectedContactType {
@@ -93,3 +100,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 
+extension UIViewController {
+    static func instantiateFromStoryboard(_ name: String = "Main") -> Self {
+        return instantiateFromStoryboardHelper(name)
+    }
+    
+    private static func instantiateFromStoryboardHelper<T>(_ name: String) -> T {
+        let storyboard = UIStoryboard(name: name, bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! T
+        return controller
+    }
+}

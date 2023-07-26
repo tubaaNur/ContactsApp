@@ -13,6 +13,7 @@
 		296DC2532A70EBD4009BBF4E /* ContactType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DC2522A70EBD4009BBF4E /* ContactType.swift */; };
 		296DC2552A70EBE7009BBF4E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DC2542A70EBE7009BBF4E /* Person.swift */; };
 		296DC2572A70EC0D009BBF4E /* PersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DC2562A70EC0D009BBF4E /* PersonData.swift */; };
+		296DC25D2A70EFD6009BBF4E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DC25C2A70EC81009BBF4E /* DetailViewController.swift */; };
 		29B39FAB2A6F248600DB397A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B39FAA2A6F248600DB397A /* Main.storyboard */; };
 		29B39FAF2A6F2B4700DB397A /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B39FAE2A6F2B4700DB397A /* ContactTableViewCell.swift */; };
 		29B39FB12A6F325B00DB397A /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B39FB02A6F325B00DB397A /* PickerViewController.swift */; };
@@ -128,8 +129,8 @@
 		296DC25A2A70EC5E009BBF4E /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				295923DC2A7080D00004D859 /* ContactDetailViewCell.swift */,
 				296DC25C2A70EC81009BBF4E /* DetailViewController.swift */,
+				295923DC2A7080D00004D859 /* ContactDetailViewCell.swift */,
 				295923DA2A7075840004D859 /* DetailViewController.storyboard */,
 			);
 			path = Detail;
@@ -329,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				296DC25D2A70EFD6009BBF4E /* DetailViewController.swift in Sources */,
 				296DC2552A70EBE7009BBF4E /* Person.swift in Sources */,
 				29B39FB12A6F325B00DB397A /* PickerViewController.swift in Sources */,
 				29E5F3642A6EC441002E9D51 /* ViewController.swift in Sources */,
