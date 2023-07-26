@@ -14,7 +14,7 @@
 		296DC2552A70EBE7009BBF4E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DC2542A70EBE7009BBF4E /* Person.swift */; };
 		296DC2572A70EC0D009BBF4E /* PersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DC2562A70EC0D009BBF4E /* PersonData.swift */; };
 		296DC25D2A70EFD6009BBF4E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DC25C2A70EC81009BBF4E /* DetailViewController.swift */; };
-		296DC25F2A70FDBE009BBF4E /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 296DC25E2A70FDBE009BBF4E /* readme.md */; };
+		296DC25F2A70FDBE009BBF4E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 296DC25E2A70FDBE009BBF4E /* README.md */; };
 		296DC2612A70FF0C009BBF4E /* Contacts App Record.mov in Resources */ = {isa = PBXBuildFile; fileRef = 296DC2602A70FF0C009BBF4E /* Contacts App Record.mov */; };
 		29B39FAB2A6F248600DB397A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B39FAA2A6F248600DB397A /* Main.storyboard */; };
 		29B39FAF2A6F2B4700DB397A /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B39FAE2A6F2B4700DB397A /* ContactTableViewCell.swift */; };
@@ -55,7 +55,7 @@
 		296DC2542A70EBE7009BBF4E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		296DC2562A70EC0D009BBF4E /* PersonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonData.swift; sourceTree = "<group>"; };
 		296DC25C2A70EC81009BBF4E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		296DC25E2A70FDBE009BBF4E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		296DC25E2A70FDBE009BBF4E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		296DC2602A70FF0C009BBF4E /* Contacts App Record.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "Contacts App Record.mov"; path = "../../../Contacts App Record.mov"; sourceTree = "<group>"; };
 		296DC2622A70FF1D009BBF4E /* Contacts App Record.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Contacts App Record.mov"; sourceTree = "<group>"; };
 		29B39FAA2A6F248600DB397A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				296DC2622A70FF1D009BBF4E /* Contacts App Record.mov */,
-				296DC25E2A70FDBE009BBF4E /* readme.md */,
+				296DC25E2A70FDBE009BBF4E /* README.md */,
 				29E5F35E2A6EC441002E9D51 /* ContactsApp */,
 				29E5F3752A6EC442002E9D51 /* ContactsAppTests */,
 				29E5F37F2A6EC442002E9D51 /* ContactsAppUITests */,
@@ -313,7 +313,7 @@
 				29E5F36C2A6EC442002E9D51 /* LaunchScreen.storyboard in Resources */,
 				295923DB2A7075840004D859 /* DetailViewController.storyboard in Resources */,
 				29E5F3692A6EC442002E9D51 /* Assets.xcassets in Resources */,
-				296DC25F2A70FDBE009BBF4E /* readme.md in Resources */,
+				296DC25F2A70FDBE009BBF4E /* README.md in Resources */,
 				296DC2612A70FF0C009BBF4E /* Contacts App Record.mov in Resources */,
 				29B39FB32A6F32FA00DB397A /* PickerViewController.storyboard in Resources */,
 			);
