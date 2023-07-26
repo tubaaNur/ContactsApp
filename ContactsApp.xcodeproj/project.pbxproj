@@ -57,7 +57,7 @@
 		296DC25C2A70EC81009BBF4E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		296DC25E2A70FDBE009BBF4E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		296DC2602A70FF0C009BBF4E /* Contacts App Record.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "Contacts App Record.mov"; path = "../../../Contacts App Record.mov"; sourceTree = "<group>"; };
-		296DC2622A70FF1D009BBF4E /* Contacts App Record.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Contacts App Record.mp4"; sourceTree = "<group>"; };
+		296DC2652A71022A009BBF4E /* Contacts-App-Record.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Contacts-App-Record.gif"; sourceTree = "<group>"; };
 		29B39FAA2A6F248600DB397A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		29B39FAE2A6F2B4700DB397A /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		29B39FB02A6F325B00DB397A /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 		29E5F3532A6EC441002E9D51 = {
 			isa = PBXGroup;
 			children = (
-				296DC2622A70FF1D009BBF4E /* Contacts App Record.mp4 */,
+				296DC2652A71022A009BBF4E /* Contacts-App-Record.gif */,
 				296DC25E2A70FDBE009BBF4E /* README.md */,
 				29E5F35E2A6EC441002E9D51 /* ContactsApp */,
 				29E5F3752A6EC442002E9D51 /* ContactsAppTests */,
