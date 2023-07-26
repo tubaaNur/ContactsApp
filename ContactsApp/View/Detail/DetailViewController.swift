@@ -43,7 +43,7 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContactDetailsViewCell", for: indexPath) as! ContactDetailsViewCell
         
-        let person = filterPersonsByContactType(indexPath.section, selectedContactType: cT)[indexPath.row]
+        let person = filterPersonsByContactType(indexPath.section, selectedContactType: cT, isCurrentPersonIncluded: false, currentPersonName: labelName)[indexPath.row]
         cell.cellLabel.text = person.name
         cell.cellImageView.image = UIImage(named:  person.gender.type)
         

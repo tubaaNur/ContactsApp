@@ -90,7 +90,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     private func getPersonsByContactType(_ sectionIndex: Int) -> [Person] {
-        return filterPersonsByContactType(sectionIndex, selectedContactType : selectedContactType)
+        return filterPersonsByContactType(sectionIndex, selectedContactType : selectedContactType, isCurrentPersonIncluded:true, currentPersonName: nil)
     }
     
 }
