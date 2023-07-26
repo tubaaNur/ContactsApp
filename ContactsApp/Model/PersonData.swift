@@ -18,3 +18,11 @@ struct Persons {
         Person(name: "Latte", gender: .man, contactType: .family),
     ]
 }
+
+func filterPersonsByContactType(_ sectionIndex: Int, selectedContactType: ContactType?) -> [Person] {
+    if selectedContactType == nil {
+        return Persons.persons.filter({ $0.contactType == ContactType.allCases[sectionIndex] })
+    } else {
+        return Persons.persons.filter({ $0.contactType == selectedContactType })
+    }
+}

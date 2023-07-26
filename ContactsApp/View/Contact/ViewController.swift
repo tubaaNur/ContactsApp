@@ -58,14 +58,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filterPersons(section).count
+        return getPersonsByContactType(section).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContactTableViewCell") as! ContactTableViewCell
         
-        cell.cellImageView.image = UIImage(named: filterPersons(indexPath.section)[indexPath.row].gender.type.lowercased())
-        cell.cellTitleLabel.text = filterPersons(indexPath.section)[indexPath.row].name
+        cell.cellImageView.image = UIImage(named: getPersonsByContactType(indexPath.section)[indexPath.row].gender.type.lowercased())
+        cell.cellTitleLabel.text = getPersonsByContactType(indexPath.section)[indexPath.row].name
         return cell
     }
     
@@ -73,7 +73,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let vc = DetailViewController.instantiateFromStoryboard(String(describing: DetailViewController.self))
-        let person = filterPersons(indexPath.section)[indexPath.row]
+        let person = getPersonsByContactType(indexPath.section)[indexPath.row]
         vc.imageName = person.gender.type
         vc.labelName = person.name
         vc.cT = person.contactType
@@ -89,12 +89,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    private func filterPersons(_ sectionIndex: Int) -> [Person] {
-        if selectedContactType == nil {
-            return Persons.persons.filter({ $0.contactType == ContactType.allCases[sectionIndex] })
-        } else {
-            return Persons.persons.filter({ $0.contactType == selectedContactType })
-        }
+    private func getPersonsByContactType(_ sectionIndex: Int) -> [Person] {
+        return filterPersonsByContactType(sectionIndex, selectedContactType : selectedContactType)
     }
     
 }
