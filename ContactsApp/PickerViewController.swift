@@ -19,20 +19,22 @@ class PickerViewController: UIViewController {
     
     @IBOutlet weak var filterPickerView: UIPickerView!
     
+    @IBAction func onClickCancelButton(_ sender: Any) {
+        dismiss(animated: true)
+    }
+
+    @IBAction func onClickConfirmButton(_ sender: Any) {
+        // delegate?.didSelectContactType(selectedContactType ?? .friend)
+        dismiss(animated: true)
+    }
     
     private var selectedContactType: ContactType?
-    
     var delegate: PickerViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         filterPickerView.delegate = self
         filterPickerView.dataSource = self
-    }
-    
-    @IBAction func doneButtonAct(_ sender: UIButton) {
-        delegate?.didSelectContactType(selectedContactType ?? .friend)
-        dismiss(animated: true)
     }
 }
 
