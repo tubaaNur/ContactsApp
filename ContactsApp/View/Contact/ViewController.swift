@@ -7,60 +7,10 @@
 
 import UIKit
 
-enum Gender: CaseIterable {
-    case man
-    case woman
-    
-    var type:String{
-        switch self {
-        case .woman:
-            return "woman"
-        case .man:
-            return "man"
-        }
-    }
-}
-
-enum ContactType: CaseIterable {
-    case family
-    case friend
-    case work
-    
-    var type:String{
-        switch self {
-        case .family:
-            return "Family"
-        case .friend:
-            return "Friend"
-        case .work:
-            return "Work"
-        }
-    }
-}
-struct Person {
-    var name:String
-    var gender:Gender
-    var contactType:ContactType
-}
-
-struct Persons {
-    static let persons: [Person] = [
-        Person(name: "Pilav",gender: .man, contactType: .friend),
-        Person(name: "Limonata",  gender: .woman, contactType: .family),
-        Person(name: "Musakka",  gender: .man, contactType: .family),
-        Person(name: "Tavuk Sote",  gender: .woman, contactType: .family),
-        Person(name: "Pizza", gender: .man, contactType: .family),
-        Person(name: "Hamburger",gender: .woman, contactType: .family),
-        Person(name: "Baklava", gender: .man, contactType: .family),
-        Person(name: "Künefe", gender: .woman, contactType: .family),
-        Person(name: "Latte", gender: .man, contactType: .family),
-    ]
-}
-
 class ViewController: UIViewController {
 
-    
     @IBOutlet weak var contactsTableView: UITableView!
+
     private var selectedContactType: ContactType? {
         didSet {
             contactsTableView.reloadData()

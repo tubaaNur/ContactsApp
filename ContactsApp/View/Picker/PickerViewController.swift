@@ -24,7 +24,7 @@ class PickerViewController: UIViewController {
     }
 
     @IBAction func onClickConfirmButton(_ sender: Any) {
-        // delegate?.didSelectContactType(selectedContactType ?? .friend)
+        delegate?.didSelectContactType(selectedContactType ?? .friend)
         dismiss(animated: true)
     }
     
